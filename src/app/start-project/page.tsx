@@ -37,7 +37,7 @@ const reassurances = [
 export default function StartProjectPage() {
   return (
     <section className="pt-28 pb-20 lg:pb-28 bg-light-bg min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-12">
           <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary-text mb-4">
             Start Your Project
@@ -47,9 +47,9 @@ export default function StartProjectPage() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
-          {/* Left: Reassurance */}
-          <div className="lg:col-span-2 order-2 lg:order-1">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 w-full max-w-full">
+          {/* Left: Reassurance / Questions Before We Start */}
+          <div className="lg:col-span-2 w-full max-w-full">
             <ScrollReveal>
               <div className="lg:sticky lg:top-32 space-y-6">
                 {reassurances.map((item) => {
@@ -75,14 +75,14 @@ export default function StartProjectPage() {
                   <p className="text-sm text-secondary-text italic">
                     "We keep things simple. Submit your details, we'll review, discuss scope, and get started."
                   </p>
-                  <p className="text-xs text-electric font-medium mt-2">â€” WEXELO Team</p>
+                  <p className="text-xs text-electric font-medium mt-2">&mdash; WEXELO Team</p>
                 </div>
               </div>
             </ScrollReveal>
           </div>
 
           {/* Right: Form */}
-          <div className="lg:col-span-3 order-1 lg:order-2">
+          <div className="lg:col-span-3 w-full max-w-full">
             <StartProjectForm />
           </div>
         </div>
