@@ -18,10 +18,10 @@ function AccordionItem({ question, answer, isOpen, onToggle }: AccordionItemProp
     }`}>
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-3.5 min-[390px]:py-4 md:py-5 px-1 min-[390px]:px-2 md:px-1 text-left group"
+        className="w-full flex items-center justify-between py-5 text-left group"
         aria-expanded={isOpen}
       >
-        <span className={`font-heading font-semibold text-[14.5px] min-[390px]:text-base sm:text-lg pr-8 transition-colors duration-200 ${
+        <span className={`font-heading font-semibold text-base sm:text-lg pr-4 md:pr-8 transition-colors duration-200 text-left ${
           isOpen ? 'text-electric' : 'text-primary-text'
         }`}>
           {question}
@@ -45,7 +45,7 @@ function AccordionItem({ question, answer, isOpen, onToggle }: AccordionItemProp
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className="overflow-hidden"
           >
-            <p className="pb-4 md:pb-5 px-1 min-[390px]:px-2 md:px-1 text-[13.5px] min-[390px]:text-[14.5px] md:text-base text-secondary-text leading-relaxed">
+            <p className="pb-5 text-base text-secondary-text leading-relaxed text-left">
               {answer}
             </p>
           </motion.div>
